@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<body>
+	<div id="box">
+			<input type="number" v-model="a" />
+			<input type="number" v-model="b" />
+			{{a+b}}
+	</div>
+	<script>
+	var vm = new Vue({
+		el:"#box",
+		data:{
+			a:1,
+			b:1
+		}
+	})
+
+	</script>
+</body>
+</html>
